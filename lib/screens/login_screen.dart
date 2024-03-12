@@ -1,15 +1,26 @@
 import 'package:boundless/screens/main_screen.dart';
 import 'package:boundless/utils/constants.dart';
 import 'package:boundless/widgets/custom_btn.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
   static const String id = 'login_screen';
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
+    final TextEditingController _phoneNumberController =
+        TextEditingController();
+    final TextEditingController _passwordController = TextEditingController();
+
     return Scaffold(
       backgroundColor: Constants.mainColor,
       appBar: AppBar(
@@ -35,6 +46,7 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: TextFormField(
+                        controller: _phoneNumberController,
                         keyboardType: TextInputType.text,
                         style: const TextStyle(fontSize: 21),
                         decoration: const InputDecoration(
@@ -64,6 +76,7 @@ class LoginScreen extends StatelessWidget {
                   children: [
                     Expanded(
                       child: TextFormField(
+                        controller: _passwordController,
                         keyboardType: TextInputType.multiline,
                         style: const TextStyle(fontSize: 21),
                         decoration: const InputDecoration(
@@ -93,7 +106,7 @@ class LoginScreen extends StatelessWidget {
                 child: BtnPrincipal(
                     text: "Log In",
                     onPressed: () {
-                      Navigator.pushNamed(context, MainScreen.id);
+                      //Navigator.pushNamed(context, MainScreen.id);
                     }),
               ),
             ],

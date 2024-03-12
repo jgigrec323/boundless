@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "996116177747",
+    "project_id": "boundless-416723",
+    "storage_bucket": "boundless-416723.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996116177747:android:5989c257de26ca8215b7a6",
+        "android_client_info": {
+          "package_name": "com.boundless"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8H6h0yRnJrGIpaHEB2GYoZW4XivloGfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996116177747:android:f9e1c90b95b4dc0e15b7a6",
+        "android_client_info": {
+          "package_name": "com.example.boundless"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8H6h0yRnJrGIpaHEB2GYoZW4XivloGfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

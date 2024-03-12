@@ -1,4 +1,5 @@
 import 'package:boundless/screens/login_screen.dart';
+import 'package:boundless/screens/otp_confirmation_screen.dart';
 import 'package:boundless/screens/phone_auth.dart';
 import 'package:boundless/screens/signup_screen.dart';
 import 'package:boundless/utils/constants.dart';
@@ -31,7 +32,7 @@ class HomeScreen extends StatelessWidget {
               BtnPrincipal(
                   text: "Log In",
                   onPressed: () {
-                    Navigator.pushNamed(context, LoginScreen.id);
+                    Navigator.pushNamed(context, PhoneAuth.id);
                   }),
               const SizedBox(
                 height: 30,
